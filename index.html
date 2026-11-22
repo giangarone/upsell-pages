@@ -130,6 +130,7 @@
 
     .offer {
       --secondary: #bcbcbc;
+      --positive: #83dda7;
       position: relative;
       display: flex;
       flex-direction: column;
@@ -244,7 +245,7 @@
       flex-wrap: wrap;
       align-items: baseline;
       gap: 4px 8px;
-      margin: 14px 0 18px;
+      margin: 14px 0 8px;
     }
 
     .offer-price strong {
@@ -258,6 +259,24 @@
       color: var(--secondary);
       font-size: 0.9375rem;
       font-weight: 500;
+    }
+
+    .offer-renewals {
+      display: flex;
+      align-self: flex-start;
+      align-items: center;
+      gap: 6px;
+      margin: 0 0 16px;
+      padding: 3px 8px;
+      border-radius: 6px;
+      background: rgb(68 190 123 / 16%);
+      color: var(--foreground);
+      font-size: 0.875rem;
+      font-weight: 600;
+    }
+
+    .offer-renewals span {
+      color: var(--positive);
     }
 
     .offer-total {
@@ -288,10 +307,8 @@
       text-align: right;
     }
 
-    .offer-total dt:last-of-type,
-    .offer-total dd:last-of-type {
-      color: inherit;
-      font-weight: 700;
+    .offer-total .offer-paid {
+      color: var(--positive);
     }
 
     .offer-description {
@@ -420,8 +437,8 @@
 
     <div class="upsell-intro">
       <h1>Avoid Future Renewals</h1>
-      <p>You’ve already paid <strong>$2,999</strong> for your Black Friday bundle. Get lifetime pricing at this checkout
-        only and skip future renewals for the tools you upgrade.</p>
+      <p>You’ve already paid <strong>$2,999</strong> for your Black Friday bundle. These one-time lifetime upgrades are
+        available only at this checkout.</p>
     </div>
 
     <div class="offers">
@@ -430,14 +447,13 @@
           <h2 id="prime-automation-title">Prime Automation Lifetime</h2>
         </div>
         <p class="offer-price"><strong>$1,999</strong> <span>more</span></p>
+        <p class="offer-renewals"><span aria-hidden="true">✓</span> No subscription renewals</p>
         <p class="offer-description">Set the rules for your strategy and let customizable trading bots handle execution.</p>
         <dl class="offer-total">
-          <dt>Your total</dt>
+          <dt>Lifetime total</dt>
           <dd>$4,998</dd>
           <dt>Already paid</dt>
-          <dd>−$2,999</dd>
-          <dt>Due for this upgrade</dt>
-          <dd>$1,999</dd>
+          <dd class="offer-paid">−$2,999</dd>
         </dl>
         <button class="offer-action offer-cta" type="button" disabled>Get Lifetime Access</button>
       </section>
@@ -447,15 +463,14 @@
           <h2 id="marketstream-title">MarketStream Lifetime</h2>
         </div>
         <p class="offer-price"><strong>$2,999</strong> <span>more</span></p>
+        <p class="offer-renewals"><span aria-hidden="true">✓</span> No subscription renewals</p>
         <p class="offer-description">See beyond the candles. Spot liquidity clusters, read order flow, and track whale
           activity in real time.</p>
         <dl class="offer-total">
-          <dt>Your total</dt>
+          <dt>Lifetime total</dt>
           <dd>$5,998</dd>
           <dt>Already paid</dt>
-          <dd>−$2,999</dd>
-          <dt>Due for this upgrade</dt>
-          <dd>$2,999</dd>
+          <dd class="offer-paid">−$2,999</dd>
         </dl>
         <button class="offer-action offer-cta" type="button" disabled>Get Lifetime Access</button>
       </section>
@@ -467,15 +482,14 @@
           <span class="offer-savings">Save $999</span>
         </div>
         <p class="offer-price"><strong>$3,999</strong> <span>more</span></p>
+        <p class="offer-renewals"><span aria-hidden="true">✓</span> No subscription renewals</p>
         <p class="offer-description">Chart your setups in MarketStream and let Prime Automation execute trades based on
           your rules.</p>
         <dl class="offer-total">
-          <dt>Your total</dt>
+          <dt>Lifetime total</dt>
           <dd>$6,998</dd>
           <dt>Already paid</dt>
-          <dd>−$2,999</dd>
-          <dt>Due for this upgrade</dt>
-          <dd>$3,999</dd>
+          <dd class="offer-paid">−$2,999</dd>
         </dl>
         <button class="offer-action offer-cta" type="button" disabled>Get Both for Life</button>
       </section>
