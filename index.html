@@ -24,12 +24,9 @@
     }
 
     .upsell {
-      --background: #080811;
-      --foreground: #faf9ff;
-      --secondary: #c4c3d2;
-      --aurora-base: #6557ff;
-      --aurora-highlight: #9990ff;
-      --accent-text: #c7c0ff;
+      --background: #080808;
+      --foreground: #fafafa;
+      --secondary: #c5c5c5;
       margin: 0;
       background: var(--background);
       color: var(--foreground);
@@ -39,7 +36,7 @@
     }
 
     .upsell ::selection {
-      background: var(--accent-text);
+      background: var(--secondary);
       color: var(--background);
     }
 
@@ -56,14 +53,15 @@
     }
 
     .upsell-aurora {
+      --aurora-base: #ee9a31;
+      --aurora-highlight: #ffd98a;
+      --aurora-stars: #c39b54;
       position: absolute;
       z-index: -2;
       inset: 0 0 auto;
       height: clamp(360px, 66%, 660px);
       pointer-events: none;
-      background:
-        radial-gradient(ellipse at 16% 4%, color-mix(in srgb, var(--aurora-base) 39%, transparent), transparent 49%),
-        radial-gradient(ellipse at 83% 9%, color-mix(in srgb, var(--aurora-highlight) 28%, transparent), transparent 48%);
+      background: radial-gradient(ellipse 66% 57% at 62% 14%, #90611636, transparent);
     }
 
     .upsell-aurora canvas {
@@ -83,8 +81,8 @@
       inset: auto 0 0;
       height: min(43%, 365px);
       background-image:
-        linear-gradient(rgb(211 200 255 / 12%) 1px, transparent 1px),
-        linear-gradient(90deg, rgb(211 200 255 / 12%) 1px, transparent 1px);
+        linear-gradient(rgb(255 217 138 / 12%) 1px, transparent 1px),
+        linear-gradient(90deg, rgb(255 217 138 / 12%) 1px, transparent 1px);
       background-position: center bottom;
       background-size: clamp(25px, 3vw, 44px) clamp(25px, 3vw, 44px);
       mask-image: radial-gradient(ellipse 72% 118% at 50% 100%, #000, transparent 78%);
@@ -132,7 +130,7 @@
       flex-direction: column;
       min-width: 0;
       padding: clamp(18px, 2.4vw, 28px);
-      border: 1px solid #242424;
+      border: 1px solid #424242;
       border-radius: 24px;
       background: #0c0c0c;
       color: #f7f7f7;
@@ -140,7 +138,6 @@
     }
 
     .offer--bundle {
-      --secondary: #ded1bd;
       --gold: #fac66b;
       --gold-light: #ffd98a;
       --gold-gradient: linear-gradient(115deg, #b8651a, #ee9a31 28%, var(--gold-light) 55%, var(--gold) 78%, #d07c22);
@@ -237,10 +234,10 @@
     }
 
     .offer-price strong {
-      font-size: clamp(2.625rem, 4.6vw, 3.625rem);
+      font-size: clamp(2.375rem, 4.2vw, 3.375rem);
       font-weight: 700;
       line-height: 1.2;
-      letter-spacing: -0.04em;
+      letter-spacing: -0.06em;
     }
 
     .offer-price span {
@@ -284,11 +281,14 @@
       align-items: center;
       min-height: 44px;
       padding: 9px 16px;
-      border: 1px solid transparent;
+      border: 1px solid #494949;
       border-radius: 8px;
+      background: #1c1c1c;
+      color: #f7f7f7;
       cursor: pointer;
       font: inherit;
       font-size: 0.9375rem;
+      font-weight: 600;
       text-align: center;
       text-decoration: none;
     }
@@ -296,56 +296,47 @@
     .offer-cta {
       min-height: 48px;
       margin-top: auto;
-      border-color: #333;
       border-radius: 999px;
-      background: #0c0c0c;
-      color: inherit;
-      font-weight: 600;
     }
 
     .offer--bundle .offer-cta {
       border-color: var(--gold);
       background: var(--gold) var(--gold-gradient);
       color: #181818;
+      filter: brightness(1.06);
       font-weight: 700;
     }
 
     .offer-skip {
       min-width: min(100%, 12rem);
-      border-color: color-mix(in srgb, #454064, var(--secondary) 30%);
-      background: transparent;
-      color: var(--secondary);
-      font-weight: 600;
+      color: #dedede;
     }
 
     .offer-action:focus-visible {
-      outline: 2px solid var(--accent-text);
+      outline: 2px solid #f7f7f7;
       outline-offset: 2px;
     }
 
-    .offer-cta:focus-visible {
-      outline-color: #fff;
-    }
-
     .offer-action:disabled {
-      cursor: default;
+      cursor: pointer;
     }
 
     @media (hover: hover) {
-      .offer-cta:enabled:hover {
-        border-color: #666;
-        background-color: #121212;
+      .offer-action:hover {
+        border-color: #646464;
+        background-color: #2b2b2b;
       }
 
-      .offer--bundle .offer-cta:enabled:hover {
+      .offer--bundle .offer-cta:hover {
         border-color: var(--gold-light);
+        background-color: var(--gold);
         filter: brightness(1.16);
       }
+    }
 
-      .offer-skip:enabled:hover {
-        border-color: var(--secondary);
-        background: color-mix(in srgb, var(--accent-text) 8%, transparent);
-        color: var(--foreground);
+    @media (hover: hover) and (prefers-reduced-motion: no-preference) {
+      .offer-action {
+        transition: background-color 150ms ease, border-color 150ms ease, filter 150ms ease;
       }
     }
 
@@ -380,7 +371,7 @@
     </div>
 
     <div class="upsell-intro">
-      <h1>Upgrade to lifetime access.</h1>
+      <h1>Upgrade to Lifetime Access</h1>
       <p>You’ve already paid $2,999 for your original bundle. Choose a one-time upgrade for MarketStream, Prime
         Automation, or both.</p>
     </div>
@@ -388,7 +379,7 @@
     <div class="offers">
       <section class="offer" aria-labelledby="marketstream-title">
         <div class="offer-heading">
-          <h2 id="marketstream-title">MarketStream</h2>
+          <h2 id="marketstream-title">MarketStream Lifetime</h2>
         </div>
         <p class="offer-price"><strong>$2,999</strong> <span>one-time payment</span></p>
         <p class="offer-description">Keep using your MarketStream trading workspace without subscription renewals.</p>
@@ -397,7 +388,7 @@
 
       <section class="offer" aria-labelledby="prime-automation-title">
         <div class="offer-heading">
-          <h2 id="prime-automation-title">Prime Automation</h2>
+          <h2 id="prime-automation-title">Prime Automation Lifetime</h2>
         </div>
         <p class="offer-price"><strong>$1,999</strong> <span>one-time payment</span></p>
         <p class="offer-description">Keep running your trading strategies with Prime Automation without subscription renewals.</p>
@@ -407,7 +398,7 @@
       <section class="offer offer--bundle" aria-labelledby="bundle-title">
         <span class="offer-border" aria-hidden="true"></span>
         <div class="offer-heading">
-          <h2 id="bundle-title">Lifetime bundle</h2>
+          <h2 id="bundle-title">Lifetime Bundle</h2>
           <span class="offer-savings">Save $999</span>
         </div>
         <p class="offer-price"><strong>$3,999</strong> <span>one-time payment</span></p>
@@ -442,7 +433,7 @@
           gl_Position = vec4(aPosition, 0.0, 1.0);
         }
       `;
-      // The homepage's volumetric aurora uses the page palette from CSS.
+      // The volumetric aurora uses the Black Friday checkout palette from CSS.
       const fragmentSource = `#version 300 es
         precision highp float;
         precision highp sampler3D;
@@ -453,6 +444,7 @@
         uniform vec3 uBackground;
         uniform vec3 uBase;
         uniform vec3 uHighlight;
+        uniform vec3 uStars;
         uniform sampler3D uNoise;
         const int STEPS = 40;
         const vec3 VOLUME_LOW = vec3(-250.0, 50.0, -500.0);
@@ -543,7 +535,7 @@
           vec3 aurora = pow(toneMap(traceAurora(direction) * fade), vec3(1.0 / 2.2));
           // Give the headline some separation from the brightest parts of the curtains.
           float exposure = mix(0.55, 0.82, smoothstep(0.0, 0.9, abs(2.0 * vUv.x - 1.0)));
-          vec3 light = aurora * exposure + uHighlight * (0.20 * stars(direction) * fade);
+          vec3 light = aurora * exposure + uStars * (0.22 * stars(direction) * fade);
           fragColor = vec4(uBackground + (1.0 - uBackground) * light, 1.0);
         }
       `;
@@ -616,14 +608,15 @@
         gl.enableVertexAttribArray(position);
         gl.vertexAttribPointer(position, 2, gl.FLOAT, false, 0, 0);
         const style = getComputedStyle(canvas);
-        for (const [uniform, property] of [
-          ['uBackground', '--background'],
-          ['uBase', '--aurora-base'],
-          ['uHighlight', '--aurora-highlight']
+        for (const [uniform, property, linear] of [
+          ['uBackground', '--background', false],
+          ['uBase', '--aurora-base', true],
+          ['uHighlight', '--aurora-highlight', true],
+          ['uStars', '--aurora-stars', false]
         ]) {
           const hex = parseInt(style.getPropertyValue(property).trim().slice(1), 16);
           const rgb = [(hex >> 16) & 255, (hex >> 8) & 255, hex & 255].map(channel => channel / 255);
-          const color = uniform === 'uBackground' ? rgb : rgb.map(channel => channel ** 2.2);
+          const color = linear ? rgb.map(channel => channel ** 2.2) : rgb;
           gl.uniform3fv(gl.getUniformLocation(program, uniform), color);
         }
         return {
