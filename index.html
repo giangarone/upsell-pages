@@ -212,6 +212,10 @@
       gap: 8px 12px;
     }
 
+    .offer--bundle .offer-heading {
+      justify-content: space-between;
+    }
+
     .offer-heading h2 {
       margin: 0;
       font-size: 1.125rem;
@@ -219,12 +223,15 @@
     }
 
     .offer-savings {
+      margin-inline-start: auto;
       padding: 3px 9px;
       border: 1px solid var(--gold);
       border-radius: 8px;
-      background: #916a20;
+      background: var(--gold) var(--gold-gradient);
+      color: #181818;
       font-size: 0.875rem;
       font-weight: 600;
+      white-space: nowrap;
     }
 
     .offer-price {
