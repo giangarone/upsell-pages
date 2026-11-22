@@ -293,10 +293,16 @@
       color: var(--positive);
     }
 
+    .due-now {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
     .save-tag {
       display: inline-block;
       margin-left: 0;
-      margin-right: 6px;
+      margin-right: 0;
       padding: 2px 8px;
       border-radius: 999px;
       background: rgb(68 190 123 / 16%);
@@ -449,7 +455,7 @@
           <dt>Already paid</dt>
           <dd class="offer-paid">−$2,999</dd>
           <dt>Due now</dt>
-          <dd><span class="save-tag">Save $2,999</span> $1,999</dd>
+          <dd><span class="due-now"><span class="save-tag">Save $2,999</span><span class="due-price">$1,999</span></span></dd>
         </dl>
         <button class="offer-action offer-cta" type="button" disabled>Get Lifetime Access</button>
       </section>
@@ -468,7 +474,7 @@
           <dt>Already paid</dt>
           <dd class="offer-paid">−$2,999</dd>
           <dt>Due now</dt>
-          <dd><span class="save-tag">Save $2,999</span> $2,999</dd>
+          <dd><span class="due-now"><span class="save-tag">Save $2,999</span><span class="due-price">$2,999</span></span></dd>
         </dl>
         <button class="offer-action offer-cta" type="button" disabled>Get Lifetime Access</button>
       </section>
@@ -489,7 +495,7 @@
           <dt>Already paid</dt>
           <dd class="offer-paid">−$2,999</dd>
           <dt>Due now</dt>
-          <dd><span class="save-tag">Save $2,999</span> $3,999</dd>
+          <dd><span class="due-now"><span class="save-tag">Save $2,999</span><span class="due-price">$3,999</span></span></dd>
         </dl>
         <button class="offer-action offer-cta" type="button" disabled>Get Both for Life</button>
       </section>
