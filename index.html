@@ -10,6 +10,8 @@
   <link rel="icon"
     href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAEtUlEQVRYhe3XWWxUVRgH8P937jqdpTNtp6UtAimliYGGsInERBOFRBHxAY1JNVEeMG7xwUQTl5gY8UljgglKog+gEX0wKpFg8AFB3KqNArV0bFqYplKmdDZmn7n3nM+HQl3CtFMkEow3OQ/3nPzz/b57z73JIWbG1bzEVa3+P+CaAWSiCB99prSjEJNtVwXQ9zo+yozKJyN7k2/+64ChfdiUHccSOyQGk5HCpnh/ZtHlFlOD+66XR3YsrxmQHIaI/4o7dRs5MISnWQynh1IPX05xnuy/QZ388HM+3XuAx06sqAmQT8BMDGMNCAwCFyfr/Olhvjn3W5bmClCR3dshSzpX8pBf7XmxJgAYbfkEOklAFeJmQ2bU15oYsFYVJ+n2uRTnRF+XSh2/BZqdh2Hn1Mj3G/nUz/NmBYyfwBbNRJ4VRD6lNWmmdFgpc/iTiTfmBIh98RzZ4bGL9+RrjKne/c/OCpiIYLNhIZfPookEKwAQOmQpWe48czS2edbKyiEV+fReNf7lFkilg0gBAAyrqKL9t3J0gGYEZGLoAkGVi/ARQV2c1z1aKnky8dRs9Tk9vEwOvPo+3IqXM+faoaQ+tcAEZuLo4MqqgIEDuEkzUKiU4cVftxyzVKZTdJrj/bHFMwHkyZ1vkd9fgWY6YCbOJltIaO7UomtxYqK7KiA1hnVCwHEqsP++pqSyAZBbLK+t2n38myUonF4Gj+EAAIQmUS762KnYADGYwenJ5fqlwmcHQYUEloJB+STChgQ0BnQAssyQZYVKxm3JjxfWAth7SUEich/Yk4d2tg2SAFcCSoLTsQ4SDQzXIT43fhft2cVb3QIMgwGDAV0BVIJdiqGHs2izdOzXHBgmM0yrDDt4HqSl3WBnqtsKZgKesLXT9OeV4SuQ6c1B95Sg2+dJxEfvV6liECh9jawwOKNAWQXOMkMLJSkP5oph6uk41vcdQY/fAGwJWAqwGWpeO2ItC9B393Y8NtUSAbAvjBYkB0/ck4kOvJM5pXZZoTTsUBKqMQFTpiFEAtQYzIjGDS8L/yOvVXtN7u5XIG7biJcMA/D6UfH6UfH44AbCSLOE3t6N96qFjbrQDyzNkrdVTJDmkcKoq5DmrZAIOCTCObgQpK96t1oeAPSHnodYugJDrfMxwjy115WEZvuQlC7s5i7sq6ovF7PC9MSsoJMBE/3xlBggswStdYg8a87NBAAu/Ii6V+MDJaErBd2wkScNsrkD3y5YAadakIhLmmWeJsHKqHML0wusNAizTObqz2YrPg1YsBiHPXVIazrK3iAmpANr4crq3QOAZhtF3eMZYSYy690sGDTVvZAgM0/6/IM1A1rnozfQgIn6MEZ1A2UAKtSOwzMF/dd1wPT5jwOAGXCyAAAFbeqDDcVIX/9dzYBFXcg1teDHSgnBXArtrV3o7bwRkdnCZn3DIZaVgNDgetvKMUZZAOK8bm99vJbi0wAAuKMHTzPDCjYjumEbHq0l7GvvOqNZ3qhypNcMuJnAQnPQ09izjvTOX2oFgJmnx0+HuGPkGIf+PDfbKCWH10wee4GzY0+wcg4+MJcsM4OuxNEsd+bjB3UrYdpN296ea/aKAP7JdW0cTP7TgN8BBSFkjMBnZfYAAAAASUVORK5CYII="
     type="image/png">
+  <script src="https://fast.wistia.com/player.js" async></script>
+  <script src="https://fast.wistia.com/embed/7c615bkj59.js" type="module" async></script>
   <style>
     @font-face {
       font-family: "Plus Jakarta Sans";
@@ -27,6 +29,9 @@
       --background: #080808;
       --foreground: #fafafa;
       --secondary: #c5c5c5;
+      --gold: #fac66b;
+      --gold-light: #ffd98a;
+      --gold-gradient: linear-gradient(115deg, #b8651a, #ee9a31 28%, var(--gold-light) 55%, var(--gold) 78%, #d07c22);
       margin: 0;
       background: var(--background);
       color: var(--foreground);
@@ -121,6 +126,32 @@
       font-weight: 700;
     }
 
+    .upsell-video {
+      position: relative;
+      width: min(100%, 38rem);
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      border: 1px solid transparent;
+      border-radius: clamp(16px, 2.5vw, 24px);
+      background:
+        linear-gradient(#19150d, #19150d) padding-box,
+        var(--gold-gradient) border-box;
+      box-shadow: 0 0 40px rgb(238 154 49 / 16%);
+    }
+
+    .upsell-video wistia-player {
+      position: absolute;
+      inset: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .upsell-video wistia-player:not(:defined) {
+      background: center / contain no-repeat url("https://fast.wistia.com/embed/medias/7c615bkj59/swatch");
+      filter: blur(5px);
+    }
+
     .offers {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -144,9 +175,6 @@
     }
 
     .offer--bundle {
-      --gold: #fac66b;
-      --gold-light: #ffd98a;
-      --gold-gradient: linear-gradient(115deg, #b8651a, #ee9a31 28%, var(--gold-light) 55%, var(--gold) 78%, #d07c22);
       border-color: transparent;
       background:
         radial-gradient(ellipse 105% 340px at 70% 0%, #4c3918, transparent) padding-box,
@@ -206,6 +234,7 @@
     }
 
     @media (forced-colors: active) {
+      .upsell-video,
       .offer--bundle {
         border-color: CanvasText;
       }
@@ -367,7 +396,6 @@
     }
 
     .offer-terms {
-      max-width: 64ch;
       margin: 0;
       color: var(--secondary);
       font-size: 0.875rem;
@@ -473,6 +501,10 @@
     <div class="upsell-intro">
       <h1>Skip Future Renewals</h1>
       <p>Add lifetime access to your Black Friday bundle. Pay once to upgrade MarketStream, Prime&nbsp;Automation, or both, and skip future renewals.</p>
+    </div>
+
+    <div class="upsell-video">
+      <wistia-player media-id="7c615bkj59" aspect="1.7777777777777777"></wistia-player>
     </div>
 
     <div class="offers">
