@@ -253,8 +253,35 @@
       font-weight: 500;
     }
 
+    .offer-total {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 8px;
+      margin: auto 0 14px;
+      padding-top: 10px;
+      border-top: 1px dashed #424242;
+    }
+
+    .offer--bundle .offer-total {
+      border-top-color: #776036;
+    }
+
+    .offer-total dt {
+      color: var(--secondary);
+      font-size: 0.875rem;
+    }
+
+    .offer-total dd {
+      margin: 0;
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 1.25;
+      letter-spacing: -0.04em;
+    }
+
     .offer-description {
-      margin: 0 0 24px;
+      margin: 0 0 16px;
       padding-top: 16px;
       border-top: 1px solid #242424;
       color: var(--secondary);
@@ -302,7 +329,6 @@
 
     .offer-cta {
       min-height: 48px;
-      margin-top: auto;
       border-radius: 999px;
     }
 
@@ -380,8 +406,8 @@
 
     <div class="upsell-intro">
       <h1>Upgrade to Lifetime Access</h1>
-      <p>Add lifetime access to your Black Friday bundle. Pay once to upgrade MarketStream, <span style="white-space: nowrap;">Prime Automation</span>, or both,
-        and skip future renewals.</p>
+      <p>Add lifetime access to your Black Friday bundle. Pay once to upgrade MarketStream, <span style="white-space: nowrap;">Prime Automation</span>, or both, and skip future
+        renewals.</p>
     </div>
 
     <div class="offers">
@@ -389,8 +415,12 @@
         <div class="offer-heading">
           <h2 id="prime-automation-title">Prime Automation Lifetime</h2>
         </div>
-        <p class="offer-price"><strong>$1,999</strong> <span>one-time payment</span></p>
+        <p class="offer-price"><strong>$1,999</strong> <span>One-time upgrade</span></p>
         <p class="offer-description">Set the rules for your strategy and let customizable trading bots handle execution.</p>
+        <dl class="offer-total">
+          <dt>Your total</dt>
+          <dd>$4,998</dd>
+        </dl>
         <button class="offer-action offer-cta" type="button" disabled>Upgrade to Lifetime</button>
       </section>
 
@@ -398,9 +428,13 @@
         <div class="offer-heading">
           <h2 id="marketstream-title">MarketStream Lifetime</h2>
         </div>
-        <p class="offer-price"><strong>$2,999</strong> <span>one-time payment</span></p>
+        <p class="offer-price"><strong>$2,999</strong> <span>One-time upgrade</span></p>
         <p class="offer-description">See beyond the candles. Spot liquidity clusters, read order flow, and track whale
           activity in real time.</p>
+        <dl class="offer-total">
+          <dt>Your total</dt>
+          <dd>$5,998</dd>
+        </dl>
         <button class="offer-action offer-cta" type="button" disabled>Upgrade to Lifetime</button>
       </section>
 
@@ -410,9 +444,13 @@
           <h2 id="bundle-title">Lifetime Bundle</h2>
           <span class="offer-savings">Save $999</span>
         </div>
-        <p class="offer-price"><strong>$3,999</strong> <span>one-time payment</span></p>
+        <p class="offer-price"><strong>$3,999</strong> <span>One-time upgrade</span></p>
         <p class="offer-description">Chart your setups in MarketStream and let Prime Automation execute trades based on
           your rules.</p>
+        <dl class="offer-total">
+          <dt>Your total</dt>
+          <dd>$6,998</dd>
+        </dl>
         <button class="offer-action offer-cta" type="button" disabled>Upgrade Both to Lifetime</button>
       </section>
     </div>
