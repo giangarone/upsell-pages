@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description"
-    content="Upgrade to lifetime MarketStream access with a one-time payment and end future MarketStream subscription renewals.">
-  <title>MarketStream Lifetime Upgrade | ChartPrime</title>
+    content="Choose a one-time lifetime upgrade for MarketStream, Prime Automation, or both with bundle savings.">
+  <title>Lifetime Upgrades | ChartPrime</title>
   <link rel="icon"
     href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAEtUlEQVRYhe3XWWxUVRgH8P937jqdpTNtp6UtAimliYGGsInERBOFRBHxAY1JNVEeMG7xwUQTl5gY8UljgglKog+gEX0wKpFg8AFB3KqNArV0bFqYplKmdDZmn7n3nM+HQl3CtFMkEow3OQ/3nPzz/b57z73JIWbG1bzEVa3+P+CaAWSiCB99prSjEJNtVwXQ9zo+yozKJyN7k2/+64ChfdiUHccSOyQGk5HCpnh/ZtHlFlOD+66XR3YsrxmQHIaI/4o7dRs5MISnWQynh1IPX05xnuy/QZ388HM+3XuAx06sqAmQT8BMDGMNCAwCFyfr/Olhvjn3W5bmClCR3dshSzpX8pBf7XmxJgAYbfkEOklAFeJmQ2bU15oYsFYVJ+n2uRTnRF+XSh2/BZqdh2Hn1Mj3G/nUz/NmBYyfwBbNRJ4VRD6lNWmmdFgpc/iTiTfmBIh98RzZ4bGL9+RrjKne/c/OCpiIYLNhIZfPookEKwAQOmQpWe48czS2edbKyiEV+fReNf7lFkilg0gBAAyrqKL9t3J0gGYEZGLoAkGVi/ARQV2c1z1aKnky8dRs9Tk9vEwOvPo+3IqXM+faoaQ+tcAEZuLo4MqqgIEDuEkzUKiU4cVftxyzVKZTdJrj/bHFMwHkyZ1vkd9fgWY6YCbOJltIaO7UomtxYqK7KiA1hnVCwHEqsP++pqSyAZBbLK+t2n38myUonF4Gj+EAAIQmUS762KnYADGYwenJ5fqlwmcHQYUEloJB+STChgQ0BnQAssyQZYVKxm3JjxfWAth7SUEich/Yk4d2tg2SAFcCSoLTsQ4SDQzXIT43fhft2cVb3QIMgwGDAV0BVIJdiqGHs2izdOzXHBgmM0yrDDt4HqSl3WBnqtsKZgKesLXT9OeV4SuQ6c1B95Sg2+dJxEfvV6liECh9jawwOKNAWQXOMkMLJSkP5oph6uk41vcdQY/fAGwJWAqwGWpeO2ItC9B393Y8NtUSAbAvjBYkB0/ck4kOvJM5pXZZoTTsUBKqMQFTpiFEAtQYzIjGDS8L/yOvVXtN7u5XIG7biJcMA/D6UfH6UfH44AbCSLOE3t6N96qFjbrQDyzNkrdVTJDmkcKoq5DmrZAIOCTCObgQpK96t1oeAPSHnodYugJDrfMxwjy115WEZvuQlC7s5i7sq6ovF7PC9MSsoJMBE/3xlBggswStdYg8a87NBAAu/Ii6V+MDJaErBd2wkScNsrkD3y5YAadakIhLmmWeJsHKqHML0wusNAizTObqz2YrPg1YsBiHPXVIazrK3iAmpANr4crq3QOAZhtF3eMZYSYy690sGDTVvZAgM0/6/IM1A1rnozfQgIn6MEZ1A2UAKtSOwzMF/dd1wPT5jwOAGXCyAAAFbeqDDcVIX/9dzYBFXcg1teDHSgnBXArtrV3o7bwRkdnCZn3DIZaVgNDgetvKMUZZAOK8bm99vJbi0wAAuKMHTzPDCjYjumEbHq0l7GvvOqNZ3qhypNcMuJnAQnPQ09izjvTOX2oFgJmnx0+HuGPkGIf+PDfbKCWH10wee4GzY0+wcg4+MJcsM4OuxNEsd+bjB3UrYdpN296ea/aKAP7JdW0cTP7TgN8BBSFkjMBnZfYAAAAASUVORK5CYII="
     type="image/png">
@@ -30,24 +30,12 @@
       --aurora-base: #6557ff;
       --aurora-highlight: #9990ff;
       --accent-text: #c7c0ff;
-      --offer-surface: #10101b;
-      --offer-edge: #454064;
       margin: 0;
       background: var(--background);
       color: var(--foreground);
       color-scheme: dark;
       font-family: "Plus Jakarta Sans", system-ui, sans-serif;
       line-height: 1.5;
-    }
-
-    .upsell--prime-automation {
-      --background: #10080b;
-      --secondary: #dec5cb;
-      --aurora-base: #f8522e;
-      --aurora-highlight: #fa866d;
-      --accent-text: #ffbeb2;
-      --offer-surface: #1a1116;
-      --offer-edge: #614049;
     }
 
     .upsell ::selection {
@@ -61,10 +49,10 @@
       display: grid;
       justify-items: center;
       align-content: center;
-      gap: clamp(26px, 4vw, 38px);
+      gap: clamp(24px, 3vw, 32px);
       min-height: 100svh;
       overflow: clip;
-      padding: clamp(52px, 7vw, 104px) 20px clamp(52px, 6vw, 88px);
+      padding: clamp(42px, 5vw, 72px) clamp(16px, 3vw, 36px) clamp(42px, 5vw, 72px);
     }
 
     .upsell-aurora {
@@ -124,56 +112,85 @@
       max-width: 61ch;
       margin: 18px 0 0;
       color: var(--secondary);
-      font-size: clamp(0.975rem, 2vw, 1.125rem);
+      font-size: clamp(1rem, 2vw, 1.125rem);
       font-weight: 500;
       line-height: 1.65;
       text-wrap: pretty;
     }
 
+    .offers {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: clamp(14px, 2vw, 22px);
+      width: min(100%, 72rem);
+    }
+
     .offer {
+      --secondary: #bcbcbc;
       position: relative;
-      width: min(100%, 29rem);
-      padding: clamp(20px, 4vw, 28px);
-      border: 1px solid var(--offer-edge);
-      border-radius: 16px;
-      background: linear-gradient(150deg, color-mix(in srgb, var(--offer-surface), var(--aurora-base) 7%), var(--offer-surface) 64%);
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      padding: clamp(18px, 2.4vw, 28px);
+      border: 1px solid #242424;
+      border-radius: 24px;
+      background: #0c0c0c;
+      color: #f7f7f7;
       font-variant-numeric: tabular-nums;
     }
 
-    @property --upsell-offer-angle {
-      syntax: "<angle>";
-      initial-value: -45deg;
-      inherits: false;
+    .offer--bundle {
+      --secondary: #ded1bd;
+      --gold: #fac66b;
+      --gold-light: #ffd98a;
+      --gold-gradient: linear-gradient(115deg, #b8651a, #ee9a31 28%, var(--gold-light) 55%, var(--gold) 78%, #d07c22);
+      border-color: transparent;
+      background:
+        radial-gradient(ellipse 105% 340px at 70% 0%, #4c3918, transparent) padding-box,
+        linear-gradient(165deg, #221a0d, #19150d 55%, #231b0e) padding-box,
+        var(--gold-gradient) border-box;
+      color: #fff;
     }
 
-    @supports (mask-composite: exclude) {
-      .offer::before {
-        position: absolute;
-        inset: -1px;
-        padding: 1px;
-        border-radius: inherit;
-        pointer-events: none;
-        content: "";
-        background: conic-gradient(from var(--upsell-offer-angle, -45deg),
-            transparent 0deg,
-            color-mix(in srgb, var(--aurora-highlight) 26%, transparent) 32deg,
-            var(--aurora-highlight) 59deg,
-            var(--accent-text) 73deg,
-            transparent 77deg 180deg,
-            color-mix(in srgb, var(--aurora-highlight) 16%, transparent) 212deg,
-            var(--aurora-base) 239deg,
-            var(--aurora-highlight) 253deg,
-            transparent 257deg 360deg);
-        mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
-        mask-composite: exclude;
-      }
+    .offer-border {
+      display: none;
+    }
 
-      @media (prefers-reduced-motion: no-preference) {
-        .offer::before {
+    @media (prefers-reduced-motion: no-preference) and (forced-colors: none) {
+      @supports (offset-path: inset(0 round 23px)) and (mask-composite: exclude) {
+        .offer-border {
+          position: absolute;
+          inset: 0;
+          display: block;
+          padding: 2px;
+          border-radius: 23px;
+          pointer-events: none;
+          mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+          mask-composite: exclude;
+        }
+
+        .offer-border::before,
+        .offer-border::after {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 300px;
+          height: 140px;
+          background:
+            radial-gradient(ellipse 28% 48% at 68% 50%, #fff9e9, var(--gold-light) 28%, transparent),
+            radial-gradient(ellipse 44% 49% at 44% 50%, var(--gold), #ee9a3160 56%, transparent);
+          offset-path: inset(0 round 23px);
+          content: "";
           animation: upsell-offer-orbit 6s linear infinite paused;
         }
 
-        .offer.is-border-active::before {
+        .offer-border::after {
+          animation-delay: -3s;
+          opacity: 0.8;
+        }
+
+        .is-border-active .offer-border::before,
+        .is-border-active .offer-border::after {
           animation-play-state: running;
         }
       }
@@ -181,27 +198,46 @@
 
     @keyframes upsell-offer-orbit {
       to {
-        --upsell-offer-angle: 315deg;
+        offset-distance: 100%;
       }
     }
 
-    .offer h2 {
+    @media (forced-colors: active) {
+      .offer--bundle {
+        border-color: CanvasText;
+      }
+    }
+
+    .offer-heading {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px 12px;
+    }
+
+    .offer-heading h2 {
       margin: 0;
-      color: var(--accent-text);
-      font-size: 0.9375rem;
+      font-size: 1.125rem;
       font-weight: 700;
     }
 
+    .offer-savings {
+      padding: 3px 9px;
+      border: 1px solid var(--gold);
+      border-radius: 8px;
+      background: #916a20;
+      font-size: 0.875rem;
+      font-weight: 600;
+    }
+
     .offer-price {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: baseline;
-      gap: 0 12px;
-      margin: 1px 0 19px;
+      display: grid;
+      gap: 4px;
+      margin: 14px 0 18px;
     }
 
     .offer-price strong {
-      font-size: clamp(2.625rem, 7vw, 3.625rem);
+      font-size: clamp(2.625rem, 4.6vw, 3.625rem);
       font-weight: 700;
       line-height: 1.2;
       letter-spacing: -0.04em;
@@ -213,47 +249,39 @@
       font-weight: 500;
     }
 
-    .offer-summary {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      margin: 0;
-      padding: 14px 0;
-      border-block: 1px solid rgb(255 255 255 / 12%);
-    }
-
-    .offer-summary>div+div {
-      border-inline-start: 1px solid rgb(255 255 255 / 12%);
-      padding-inline-start: 16px;
-    }
-
-    .offer-summary dt {
+    .offer-description {
+      margin: 0 0 24px;
+      padding-top: 16px;
+      border-top: 1px solid #242424;
       color: var(--secondary);
-      font-size: 0.8125rem;
+      line-height: 1.6;
     }
 
-    .offer-summary dd {
-      margin: 3px 0 0;
-      font-size: 1.125rem;
-      font-weight: 700;
+    .offer--bundle .offer-description {
+      border-color: #624c27;
+      color: inherit;
+    }
+
+    .offer-footer {
+      display: grid;
+      justify-items: center;
+      gap: 16px;
+      text-align: center;
     }
 
     .offer-terms {
-      margin: 14px 0 20px;
+      max-width: 64ch;
+      margin: 0;
       color: var(--secondary);
       font-size: 0.875rem;
       line-height: 1.55;
-    }
-
-    .offer-actions {
-      display: grid;
-      gap: 8px;
+      text-wrap: pretty;
     }
 
     .offer-action {
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 8px;
       min-height: 44px;
       padding: 9px 16px;
       border: 1px solid transparent;
@@ -266,17 +294,25 @@
     }
 
     .offer-cta {
-      background: var(--foreground);
-      color: #111019;
-      font-weight: 800;
+      min-height: 48px;
+      margin-top: auto;
+      border-color: #333;
+      border-radius: 999px;
+      background: #0c0c0c;
+      color: inherit;
+      font-weight: 600;
     }
 
-    .offer-cta svg {
-      flex: none;
+    .offer--bundle .offer-cta {
+      border-color: var(--gold);
+      background: var(--gold) var(--gold-gradient);
+      color: #181818;
+      font-weight: 700;
     }
 
     .offer-skip {
-      border-color: color-mix(in srgb, var(--offer-edge), var(--secondary) 30%);
+      min-width: min(100%, 12rem);
+      border-color: color-mix(in srgb, #454064, var(--secondary) 30%);
       background: transparent;
       color: var(--secondary);
       font-weight: 600;
@@ -287,19 +323,40 @@
       outline-offset: 2px;
     }
 
+    .offer-cta:focus-visible {
+      outline-color: #fff;
+    }
+
+    .offer-action:disabled {
+      cursor: default;
+    }
+
     @media (hover: hover) {
-      .offer-cta:hover {
-        background: var(--accent-text);
+      .offer-cta:enabled:hover {
+        border-color: #666;
+        background-color: #121212;
       }
 
-      .offer-skip:hover {
+      .offer--bundle .offer-cta:enabled:hover {
+        border-color: var(--gold-light);
+        filter: brightness(1.16);
+      }
+
+      .offer-skip:enabled:hover {
         border-color: var(--secondary);
         background: color-mix(in srgb, var(--accent-text) 8%, transparent);
         color: var(--foreground);
       }
     }
 
-    @media (max-width: 480px) {
+    @media (max-width: 55rem) {
+      .offers {
+        grid-template-columns: minmax(0, 1fr);
+        width: min(100%, 30rem);
+      }
+    }
+
+    @media (max-width: 30rem) {
       .upsell-hero {
         align-content: start;
         padding-top: 42px;
@@ -313,79 +370,57 @@
         margin-top: 14px;
       }
     }
-
-    @media (max-width: 360px) {
-      .upsell-hero {
-        gap: 24px;
-        padding: 36px 16px 48px;
-      }
-
-      .offer {
-        padding: 16px;
-      }
-
-      .offer-price {
-        column-gap: 8px;
-      }
-
-      .offer-price strong {
-        font-size: 2.375rem;
-      }
-
-      .offer-price span {
-        font-size: 0.8125rem;
-      }
-
-      .offer-terms {
-        margin-bottom: 12px;
-      }
-
-      .offer-cta {
-        padding-inline: 8px;
-        font-size: 0.875rem;
-      }
-    }
   </style>
 </head>
 
-<body class="upsell upsell--marketstream">
+<body class="upsell">
   <main class="upsell-hero">
     <div class="upsell-aurora" aria-hidden="true">
       <canvas></canvas>
     </div>
 
     <div class="upsell-intro">
-      <h1>Keep MarketStream for life.</h1>
-      <p>You’ve chosen the $2,999 bundle. Why pay to renew? Add lifetime access and keep your trading workspace without
-        ever paying another subscription fee.</p>
+      <h1>Upgrade to lifetime access.</h1>
+      <p>You’ve already paid $2,999 for your original bundle. Choose a one-time upgrade for MarketStream, Prime
+        Automation, or both.</p>
     </div>
 
-    <section class="offer" aria-labelledby="offer-title">
-      <h2 id="offer-title">Lifetime upgrade</h2>
-      <p class="offer-price"><strong>$2,999</strong> <span>one-time payment</span></p>
-      <dl class="offer-summary">
-        <div>
-          <dt>Already paid</dt>
-          <dd>$2,999</dd>
+    <div class="offers">
+      <section class="offer" aria-labelledby="marketstream-title">
+        <div class="offer-heading">
+          <h2 id="marketstream-title">MarketStream</h2>
         </div>
-        <div>
-          <dt>Full lifetime value</dt>
-          <dd>$5,999</dd>
+        <p class="offer-price"><strong>$2,999</strong> <span>one-time payment</span></p>
+        <p class="offer-description">Keep using your MarketStream trading workspace without subscription renewals.</p>
+        <button class="offer-action offer-cta" type="button" disabled>Upgrade MarketStream</button>
+      </section>
+
+      <section class="offer" aria-labelledby="prime-automation-title">
+        <div class="offer-heading">
+          <h2 id="prime-automation-title">Prime Automation</h2>
         </div>
-      </dl>
-      <p class="offer-terms">Lifetime access excludes stocks and futures market data and AI credits.</p>
-      <div class="offer-actions">
-        <button class="offer-action offer-cta" type="button" disabled>
-          Upgrade to lifetime access
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
-            <path d="M12 5L19 12L12 19" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-              stroke="black" />
-            <path d="M5 12L19 12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="black" />
-          </svg>
-        </button>
-        <button class="offer-action offer-skip" type="button" disabled>Skip this offer</button>
-      </div>
-    </section>
+        <p class="offer-price"><strong>$1,999</strong> <span>one-time payment</span></p>
+        <p class="offer-description">Keep running your trading strategies with Prime Automation without subscription renewals.</p>
+        <button class="offer-action offer-cta" type="button" disabled>Upgrade Prime Automation</button>
+      </section>
+
+      <section class="offer offer--bundle" aria-labelledby="bundle-title">
+        <span class="offer-border" aria-hidden="true"></span>
+        <div class="offer-heading">
+          <h2 id="bundle-title">Lifetime bundle</h2>
+          <span class="offer-savings">Save $999</span>
+        </div>
+        <p class="offer-price"><strong>$3,999</strong> <span>one-time payment</span></p>
+        <p class="offer-description">Get lifetime access to both products for less than buying the upgrades separately.</p>
+        <button class="offer-action offer-cta" type="button" disabled>Get both for life</button>
+      </section>
+    </div>
+
+    <footer class="offer-footer">
+      <p class="offer-terms">All lifetime upgrades exclude AI credits. MarketStream lifetime access also excludes stocks
+        and futures market data.</p>
+      <button class="offer-action offer-skip" type="button" disabled>Skip all offers</button>
+    </footer>
   </main>
   <script>
     (() => {
@@ -407,7 +442,7 @@
           gl_Position = vec4(aPosition, 0.0, 1.0);
         }
       `;
-      // The homepage's volumetric aurora, with each upsell's palette supplied by CSS.
+      // The homepage's volumetric aurora uses the page palette from CSS.
       const fragmentSource = `#version 300 es
         precision highp float;
         precision highp sampler3D;
@@ -679,7 +714,7 @@
     })();
 
     (() => {
-      const offer = document.querySelector('.offer');
+      const offer = document.querySelector('.offer--bundle');
       if (!offer || !('IntersectionObserver' in window)) return;
 
       let inView = false;
