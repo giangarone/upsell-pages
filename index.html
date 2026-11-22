@@ -266,7 +266,7 @@
       grid-template-columns: minmax(0, 1fr) auto;
       align-items: baseline;
       gap: 4px 12px;
-      margin: auto 0 14px;
+      margin: 0 0 14px;
       padding-top: 10px;
       border-top: 1px dashed #424242;
     }
@@ -323,6 +323,31 @@
     .offer--bundle .offer-description {
       border-color: #624c27;
       color: inherit;
+    }
+
+    .offer-logos {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 4px 6px;
+      min-height: 20px;
+      margin: auto 0 14px;
+    }
+
+    .offer-logo {
+      display: block;
+      width: 140px;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .offer-logo--marketstream {
+      width: 120px;
+    }
+
+    .offer-logo-separator {
+      color: #fff;
+      font-size: 0.75rem;
     }
 
     .offer-footer {
@@ -449,6 +474,9 @@
         <p class="offer-price"><strong>$1,999</strong></p>
         <p class="offer-price-note">One payment, no more renewals</p>
         <p class="offer-description">Set the rules for your strategy and let customizable trading bots handle execution.</p>
+        <div class="offer-logos">
+          <img class="offer-logo" src="prime-automation.svg" width="164" height="25" alt="">
+        </div>
         <dl class="offer-total">
           <dt>Combined total</dt>
           <dd>$4,998</dd>
@@ -468,6 +496,9 @@
         <p class="offer-price-note">One payment, no more renewals</p>
         <p class="offer-description">See beyond the candles. Spot liquidity clusters, read order flow, and track whale
           activity in real time.</p>
+        <div class="offer-logos">
+          <img class="offer-logo offer-logo--marketstream" src="marketstream.svg" width="1897" height="208" alt="">
+        </div>
         <dl class="offer-total">
           <dt>Combined total</dt>
           <dd>$5,998</dd>
@@ -489,6 +520,11 @@
         <p class="offer-price-note">One payment, no more renewals</p>
         <p class="offer-description">Chart your setups in MarketStream and let Prime Automation execute trades based on
           your rules.</p>
+        <div class="offer-logos" aria-hidden="true">
+          <img class="offer-logo" src="prime-automation.svg" width="164" height="25" alt="">
+          <span class="offer-logo-separator">+</span>
+          <img class="offer-logo offer-logo--marketstream" src="marketstream.svg" width="1897" height="208" alt="">
+        </div>
         <dl class="offer-total">
           <dt>Combined total</dt>
           <dd>$6,998</dd>
