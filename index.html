@@ -102,6 +102,19 @@
       text-align: center;
     }
 
+    .upsell-offer-badge {
+      margin-bottom: 12px;
+      padding: 4px 10px;
+      border: 1px solid rgb(255 217 138 / 35%);
+      border-radius: 8px;
+      background: #21190d;
+      color: var(--gold-light);
+      font-size: 0.8125rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
     .upsell-intro h1 {
       margin: 0;
       font-size: clamp(2.125rem, 6.2vw, 4.5rem);
@@ -444,6 +457,20 @@
       font-weight: 700;
     }
 
+    .offer-skip-group {
+      display: grid;
+      justify-items: center;
+      gap: 8px;
+    }
+
+    .offer-skip-note {
+      margin: 0;
+      color: var(--gold-light);
+      font-size: 0.875rem;
+      font-weight: 600;
+      text-wrap: balance;
+    }
+
     .offer-skip {
       min-width: min(100%, 12rem);
       background: #0C0C0C;
@@ -509,6 +536,7 @@
     </div>
 
     <div class="upsell-intro">
+      <span class="upsell-offer-badge">One-time checkout offer</span>
       <h1>Skip Future Renewals</h1>
       <p>Add lifetime access to your Black Friday bundle. Pay once to upgrade MarketStream, Prime&nbsp;Automation, or both, and skip all future renewals.</p>
     </div>
@@ -694,7 +722,10 @@
 
     <footer class="offer-footer">
       <p class="offer-terms">Lifetime access covers the software only. Prime Automation AI credits are sold separately, and MarketStream live market data requires its own subscription.</p>
-      <button class="offer-action offer-skip" type="button" disabled>Skip all offers</button>
+      <div class="offer-skip-group">
+        <p class="offer-skip-note" id="offer-skip-note">Last chance to add lifetime access to this order.</p>
+        <button class="offer-action offer-skip" type="button" aria-describedby="offer-skip-note" disabled>Skip all offers</button>
+      </div>
     </footer>
   </main>
   <script>
