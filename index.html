@@ -162,6 +162,27 @@
       filter: blur(5px);
     }
 
+    .offer-checkout {
+      display: grid;
+      justify-items: center;
+      gap: 14px;
+      width: min(100%, 42rem);
+    }
+
+    .offer-charge-details {
+      margin: 0;
+      color: var(--secondary);
+      font-size: 0.9375rem;
+      text-align: center;
+      text-wrap: balance;
+    }
+
+    .offer-charge-details strong {
+      display: block;
+      color: var(--foreground);
+      font-weight: 600;
+    }
+
     .offer-actions {
       display: grid;
       gap: 10px;
@@ -297,14 +318,20 @@
       <wistia-player media-id="7c615bkj59" aspect="1.7777777777777777"></wistia-player>
     </div>
 
-    <div class="offer-actions" role="group" aria-label="Lifetime offer options">
-      <button class="offer-action offer-cta" type="button" disabled>Yes, get lifetime access ($2,999)</button>
-      <button class="offer-action" type="button" disabled>Use a different card</button>
-      <button class="offer-action" type="button" disabled>
-        Pay over time
-        <img class="offer-payment-logo" src="clarity-pay-logo.svg" width="201" height="38" alt="Clarity Pay">
-      </button>
-      <button class="offer-action offer-skip" type="button" disabled>No thanks</button>
+    <div class="offer-checkout">
+      <p class="offer-charge-details" id="offer-charge-details">
+        <strong>$2,999 once, for MarketStream Elite Lifetime + Bravo Indicators.</strong>
+        Charged to your Visa ending 4242 when you click Yes, get lifetime access.
+      </p>
+      <div class="offer-actions" role="group" aria-label="Lifetime offer options">
+        <button class="offer-action offer-cta" type="button" aria-describedby="offer-charge-details" disabled>Yes, get lifetime access ($2,999)</button>
+        <button class="offer-action" type="button" disabled>Use a different card</button>
+        <button class="offer-action" type="button" disabled>
+          Pay over time
+          <img class="offer-payment-logo" src="clarity-pay-logo.svg" width="201" height="38" alt="Clarity Pay">
+        </button>
+        <button class="offer-action offer-skip" type="button" disabled>No thanks</button>
+      </div>
     </div>
   </main>
   <footer class="upsell-disclaimer">
