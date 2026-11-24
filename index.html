@@ -4,9 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description"
-    content="Get MarketStream Lifetime. Pay once and skip future software renewals.">
-  <title>MarketStream Lifetime | ChartPrime</title>
+  <meta name="description" content="My VIP Trading Indicators + MarketStream for Life">
+  <title>My VIP Trading Indicators + MarketStream for Life | ChartPrime</title>
   <link rel="icon"
     href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAEtUlEQVRYhe3XWWxUVRgH8P937jqdpTNtp6UtAimliYGGsInERBOFRBHxAY1JNVEeMG7xwUQTl5gY8UljgglKog+gEX0wKpFg8AFB3KqNArV0bFqYplKmdDZmn7n3nM+HQl3CtFMkEow3OQ/3nPzz/b57z73JIWbG1bzEVa3+P+CaAWSiCB99prSjEJNtVwXQ9zo+yozKJyN7k2/+64ChfdiUHccSOyQGk5HCpnh/ZtHlFlOD+66XR3YsrxmQHIaI/4o7dRs5MISnWQynh1IPX05xnuy/QZ388HM+3XuAx06sqAmQT8BMDGMNCAwCFyfr/Olhvjn3W5bmClCR3dshSzpX8pBf7XmxJgAYbfkEOklAFeJmQ2bU15oYsFYVJ+n2uRTnRF+XSh2/BZqdh2Hn1Mj3G/nUz/NmBYyfwBbNRJ4VRD6lNWmmdFgpc/iTiTfmBIh98RzZ4bGL9+RrjKne/c/OCpiIYLNhIZfPookEKwAQOmQpWe48czS2edbKyiEV+fReNf7lFkilg0gBAAyrqKL9t3J0gGYEZGLoAkGVi/ARQV2c1z1aKnky8dRs9Tk9vEwOvPo+3IqXM+faoaQ+tcAEZuLo4MqqgIEDuEkzUKiU4cVftxyzVKZTdJrj/bHFMwHkyZ1vkd9fgWY6YCbOJltIaO7UomtxYqK7KiA1hnVCwHEqsP++pqSyAZBbLK+t2n38myUonF4Gj+EAAIQmUS762KnYADGYwenJ5fqlwmcHQYUEloJB+STChgQ0BnQAssyQZYVKxm3JjxfWAth7SUEich/Yk4d2tg2SAFcCSoLTsQ4SDQzXIT43fhft2cVb3QIMgwGDAV0BVIJdiqGHs2izdOzXHBgmM0yrDDt4HqSl3WBnqtsKZgKesLXT9OeV4SuQ6c1B95Sg2+dJxEfvV6liECh9jawwOKNAWQXOMkMLJSkP5oph6uk41vcdQY/fAGwJWAqwGWpeO2ItC9B393Y8NtUSAbAvjBYkB0/ck4kOvJM5pXZZoTTsUBKqMQFTpiFEAtQYzIjGDS8L/yOvVXtN7u5XIG7biJcMA/D6UfH6UfH44AbCSLOE3t6N96qFjbrQDyzNkrdVTJDmkcKoq5DmrZAIOCTCObgQpK96t1oeAPSHnodYugJDrfMxwjy115WEZvuQlC7s5i7sq6ovF7PC9MSsoJMBE/3xlBggswStdYg8a87NBAAu/Ii6V+MDJaErBd2wkScNsrkD3y5YAadakIhLmmWeJsHKqHML0wusNAizTObqz2YrPg1YsBiHPXVIazrK3iAmpANr4crq3QOAZhtF3eMZYSYy690sGDTVvZAgM0/6/IM1A1rnozfQgIn6MEZ1A2UAKtSOwzMF/dd1wPT5jwOAGXCyAAAFbeqDDcVIX/9dzYBFXcg1teDHSgnBXArtrV3o7bwRkdnCZn3DIZaVgNDgetvKMUZZAOK8bm99vJbi0wAAuKMHTzPDCjYjumEbHq0l7GvvOqNZ3qhypNcMuJnAQnPQ09izjvTOX2oFgJmnx0+HuGPkGIf+PDfbKCWH10wee4GzY0+wcg4+MJcsM4OuxNEsd+bjB3UrYdpN296ea/aKAP7JdW0cTP7TgN8BBSFkjMBnZfYAAAAASUVORK5CYII="
     type="image/png">
@@ -32,6 +31,9 @@
       --gold: #fac66b;
       --gold-light: #ffd98a;
       --gold-gradient: linear-gradient(115deg, #b8651a, #ee9a31 28%, var(--gold-light) 55%, var(--gold) 78%, #d07c22);
+      display: grid;
+      grid-template-rows: 1fr auto;
+      min-height: 100svh;
       margin: 0;
       background: var(--background);
       color: var(--foreground);
@@ -51,10 +53,9 @@
       display: grid;
       justify-items: center;
       align-content: center;
-      gap: clamp(24px, 3vw, 32px);
-      min-height: 100svh;
+      gap: clamp(24px, 2vw, 28px);
       overflow: clip;
-      padding: clamp(42px, 5vw, 72px) clamp(16px, 3vw, 36px) clamp(42px, 5vw, 72px);
+      padding: clamp(42px, 4vw, 56px) clamp(16px, 3vw, 36px);
     }
 
     .upsell-aurora {
@@ -102,17 +103,19 @@
       text-align: center;
     }
 
-    .upsell-offer-badge {
-      margin-bottom: 12px;
-      padding: 4px 10px;
-      border: 1px solid rgb(255 217 138 / 83%);
-      border-radius: 8px;
-      background: #21190d;
-      color: #ffd47a;
-      font-size: 0.8125rem;
-      font-weight: 700;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
+    .upsell-payment-confirmation {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin: 0 0 14px;
+      color: var(--foreground);
+      font-size: 0.9375rem;
+      font-weight: 600;
+    }
+
+    .upsell-payment-confirmation svg {
+      flex: none;
+      color: #83dda7;
     }
 
     .upsell-intro h1 {
@@ -124,7 +127,7 @@
       text-wrap: balance;
     }
 
-    .upsell-intro p {
+    .upsell-subheading {
       max-width: 61ch;
       margin: 18px 0 0;
       color: var(--secondary);
@@ -132,11 +135,6 @@
       font-weight: 500;
       line-height: 1.65;
       text-wrap: pretty;
-    }
-
-    .upsell-intro strong {
-      color: var(--foreground);
-      font-weight: 700;
     }
 
     .upsell-video {
@@ -164,226 +162,39 @@
       filter: blur(5px);
     }
 
-    .upsell-divider {
-      width: min(100%, 44rem);
-      margin: 0;
-      border: 0;
-      border-top: 1px solid var(--gold);
-      opacity: 0.5;
-      mask-image: linear-gradient(to right, transparent, #000 40% 60%, transparent);
-    }
-
-    .offer {
-      --secondary: #bcbcbc;
-      --positive: #83dda7;
-      position: relative;
-      display: flex;
-      flex-direction: column;
+    .offer-actions {
+      display: grid;
+      gap: 10px;
       width: min(100%, 24rem);
-      padding: clamp(18px, 2.4vw, 28px);
-      border: 1px solid transparent;
-      border-radius: 24px;
-      font-variant-numeric: tabular-nums;
-      background:
-        radial-gradient(ellipse 105% 340px at 70% 0%, #4c3918, transparent) padding-box,
-        linear-gradient(165deg, #221a0d, #19150d 55%, #231b0e) padding-box,
-        var(--gold-gradient) border-box;
-      color: #fff;
-    }
-
-    .offer-border {
-      display: none;
-    }
-
-    @media (prefers-reduced-motion: no-preference) and (forced-colors: none) {
-      @supports (offset-path: inset(0 round 23px)) and (mask-composite: exclude) {
-        .offer-border {
-          position: absolute;
-          inset: 0;
-          display: block;
-          padding: 2px;
-          border-radius: 23px;
-          pointer-events: none;
-          mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
-          mask-composite: exclude;
-        }
-
-        .offer-border::before,
-        .offer-border::after {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 300px;
-          height: 140px;
-          background:
-            radial-gradient(ellipse 28% 48% at 68% 50%, #fff9e9, var(--gold-light) 28%, transparent),
-            radial-gradient(ellipse 44% 49% at 44% 50%, var(--gold), #ee9a3160 56%, transparent);
-          offset-path: inset(0 round 23px);
-          content: "";
-          animation: upsell-offer-orbit 6s linear infinite paused;
-        }
-
-        .offer-border::after {
-          animation-delay: -3s;
-          opacity: 0.8;
-        }
-
-        .is-border-active .offer-border::before,
-        .is-border-active .offer-border::after {
-          animation-play-state: running;
-        }
-      }
-    }
-
-    @keyframes upsell-offer-orbit {
-      to {
-        offset-distance: 100%;
-      }
-    }
-
-    @media (forced-colors: active) {
-      .upsell-video,
-      .offer {
-        border-color: CanvasText;
-      }
-    }
-
-    .offer-heading {
-      margin: 0;
-      font-size: 1.125rem;
-      font-weight: 600;
-    }
-
-    .offer-price {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: baseline;
-      gap: 4px 8px;
-      margin: 14px 0 8px;
-    }
-
-    .offer-price strong {
-      font-size: clamp(2.25rem, 4vw, 3.25rem);
-      font-weight: 600;
-      line-height: 1.2;
-      letter-spacing: -0.06em;
-    }
-
-    .offer-price-note {
-      margin: 0 0 14px;
-      color: var(--secondary);
-      font-size: 16px;
-      font-weight: 500;
-    }
-
-    .offer-total {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) auto;
-      align-items: baseline;
-      gap: 4px 12px;
-      margin: 0 0 18px;
-      padding-top: 10px;
-      border-top: 1px dashed #776036;
-    }
-
-    .offer-total dt {
-      color: var(--secondary);
-      font-size: 0.875rem;
-    }
-
-    .offer-total dd {
-      margin: 0;
-      font-size: 1rem;
-      font-weight: 500;
-      line-height: 1.25;
-      letter-spacing: -0.04em;
-      text-align: right;
-    }
-
-    .offer-total .offer-paid {
-      color: var(--positive);
-    }
-
-    .due-now {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-    }
-
-    .save-tag {
-      display: inline-block;
-      margin-left: 0;
-      margin-right: 0;
-      padding: 2px 8px;
-      border-radius: 999px;
-      background: rgb(68 190 123 / 16%);
-      color: var(--positive);
-      font-size: 0.75rem;
-      font-weight: 600;
-      vertical-align: middle;
-    }
-
-    .offer-description {
-      margin: 0 0 16px;
-      padding-top: 16px;
-      line-height: 1.6;
-    }
-
-    .offer-product {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      min-height: 40px;
-      margin: auto 0 0;
-      padding: 8px 12px;
-      border-radius: 12px;
-      background: rgba(255, 255, 255, 0.06);
-    }
-
-    .offer-logo {
-      display: block;
-      width: 120px;
-      max-width: 100%;
-      height: auto;
-    }
-
-    .offer-footer {
-      display: grid;
-      justify-items: center;
-      gap: 16px;
-      text-align: center;
-    }
-
-    .offer-terms {
-      max-width: 600px;
-      margin: 0;
-      color: var(--secondary);
-      font-size: 0.875rem;
-      line-height: 1.55;
-      text-wrap: pretty;
     }
 
     .offer-action {
       display: flex;
       justify-content: center;
       align-items: center;
-      min-height: 44px;
-      padding: 9px 16px;
-      border: 1px solid #494949;
+      flex-wrap: wrap;
+      gap: 4px 10px;
+      min-height: 46px;
+      padding: 10px 16px;
+      border: 1px solid #565656;
       border-radius: 8px;
-      background: #0c0c0c;
-      color: #f7f7f7;
+      background: #151515;
+      color: var(--foreground);
       cursor: pointer;
       font: inherit;
-      font-size: 0.9375rem;
+      font-size: 1rem;
       font-weight: 600;
       text-align: center;
-      text-decoration: none;
+      opacity: 1;
+    }
+
+    .offer-action:focus-visible {
+      outline: 2px solid var(--foreground);
+      outline-offset: 3px;
     }
 
     .offer-cta {
-      min-height: 20px;
-      border-radius: 999px;
+      min-height: 52px;
       border-color: var(--gold);
       background: var(--gold) var(--gold-gradient);
       color: #181818;
@@ -391,51 +202,58 @@
       font-weight: 700;
     }
 
-    .offer-skip-group {
-      display: grid;
-      justify-items: center;
-      gap: 8px;
-    }
-
-    .offer-skip-note {
-      margin: 0;
-      color: var(--gold-light);
-      font-size: 0.875rem;
-      font-weight: 600;
-      text-wrap: balance;
+    .offer-payment-logo {
+      display: block;
+      width: 6.25rem;
+      max-width: 100%;
+      height: auto;
     }
 
     .offer-skip {
-      min-width: min(100%, 12rem);
-      background: #0C0C0C;
-      color: #dedede;
+      justify-self: center;
+      min-height: 44px;
+      border: 0;
+      background: none;
+      color: var(--secondary);
+      font-size: 0.875rem;
+      font-weight: 500;
+      text-decoration: underline;
+      text-underline-offset: 0.2em;
     }
 
-    .offer-action:focus-visible {
-      outline: 2px solid #f7f7f7;
-      outline-offset: 2px;
-    }
-
-    .offer-action:disabled {
-      cursor: pointer;
+    .upsell-disclaimer {
+      padding: 0 16px 24px;
+      color: var(--secondary);
+      font-size: 0.875rem;
+      text-align: center;
+      text-wrap: balance;
     }
 
     @media (hover: hover) {
-      .offer-action:hover {
-        border-color: #646464;
+      .offer-action:not(.offer-cta, .offer-skip):hover {
+        border-color: #767676;
         background-color: #2b2b2b;
       }
 
       .offer-cta:hover {
         border-color: var(--gold-light);
-        background-color: var(--gold);
         filter: brightness(1.16);
+      }
+
+      .offer-skip:hover {
+        color: var(--foreground);
       }
     }
 
     @media (hover: hover) and (prefers-reduced-motion: no-preference) {
       .offer-action {
-        transition: background-color 150ms ease, border-color 150ms ease, filter 150ms ease;
+        transition: background-color 150ms ease, border-color 150ms ease, color 150ms ease, filter 150ms ease;
+      }
+    }
+
+    @media (forced-colors: active) {
+      .upsell-video {
+        border-color: CanvasText;
       }
     }
 
@@ -449,7 +267,7 @@
         font-size: clamp(1.75rem, 8.75vw, 2.4rem);
       }
 
-      .upsell-intro p {
+      .upsell-subheading {
         margin-top: 14px;
       }
     }
@@ -463,86 +281,35 @@
     </div>
 
     <div class="upsell-intro">
-      <span class="upsell-offer-badge">Your only chance to get this</span>
-      <h1>Skip Future Renewals</h1>
-      <p>This is your only chance to get MarketStream Lifetime. Pay once and skip future software renewals.</p>
+      <p class="upsell-payment-confirmation">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="9"></circle>
+          <path d="m8 12 2.5 2.5L16 9"></path>
+        </svg>
+        <span>Your payment went through. Before you go in:</span>
+      </p>
+      <h1>My VIP Trading Indicators + MarketStream for Life</h1>
+      <p class="upsell-subheading">Lifetime access to MarketStream, my custom charting platform, with my VIP trading indicators on it. One payment of $2,999.</p>
     </div>
 
     <div class="upsell-video">
       <wistia-player media-id="7c615bkj59" aspect="1.7777777777777777"></wistia-player>
     </div>
 
-    <hr class="upsell-divider">
-
-    <section class="offer" aria-labelledby="marketstream-lifetime-title">
-      <span class="offer-border" aria-hidden="true"></span>
-      <h2 class="offer-heading" id="marketstream-lifetime-title">MarketStream Lifetime</h2>
-      <p class="offer-price"><strong>$2,999</strong></p>
-      <p class="offer-price-note">One payment, no more renewals</p>
-      <div class="offer-product" aria-hidden="true">
-        <svg width="100%" height="100%" viewBox="0 0 1897 208" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:affinity="https://www.affinity.studio/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" class="offer-logo">
-          <g transform="matrix(1,0,0,1,-27340.133863,-66926.962495)">
-              <g transform="matrix(3.67753,0,0,3.67753,26343.236287,65043.071142)">
-                  <g transform="matrix(1.026144,0,0,1.026144,-6264.702308,-63080.648044)">
-                      <path d="M6480.412,61978.567L6470.791,61978.567L6470.791,62025.666L6477.99,62025.666L6477.99,61989.198L6492.053,62021.495L6499.185,62021.495L6513.248,61989.198L6513.248,62025.666L6520.447,62025.666L6520.447,61978.567L6510.825,61978.567L6495.619,62012.949L6480.412,61978.567Z" style="fill:white;fill-rule:nonzero;"/>
-                      <path d="M6526.57,62014.833C6526.57,62021.898 6532.424,62026.541 6539.825,62026.541C6544.199,62026.541 6547.025,62025.061 6548.841,62023.042L6549.447,62025.666L6555.839,62025.666L6555.839,62002.991C6555.839,61995.321 6552.273,61989.669 6541.844,61989.669C6535.99,61989.669 6531.28,61991.889 6528.454,61993.706L6531.28,61998.819C6533.837,61997.406 6537.201,61996.061 6541.104,61996.061C6545.746,61996.061 6548.572,61998.483 6548.572,62002.52L6548.572,62005.817C6547.227,62004.606 6544.199,62003.26 6540.162,62003.26C6532.087,62003.26 6526.57,62008.038 6526.57,62014.833ZM6533.904,62014.631C6533.904,62011.133 6536.865,62008.576 6541.305,62008.576C6545.746,62008.576 6548.774,62010.931 6548.774,62014.631C6548.774,62018.265 6545.679,62020.687 6541.373,62020.687C6536.932,62020.687 6533.904,62018.13 6533.904,62014.631Z" style="fill:white;fill-rule:nonzero;"/>
-                      <path d="M6580.129,61989.669C6575.15,61989.669 6571.449,61992.562 6570.104,61996.061L6570.104,61990.543L6562.904,61990.543L6562.904,62025.666L6570.238,62025.666L6570.238,62010.527C6570.238,62002.924 6572.459,61997.07 6580.129,61997.07L6580.129,61989.669Z" style="fill:white;fill-rule:nonzero;"/>
-                      <path d="M6584.906,62025.666L6592.24,62025.666L6592.24,62007.23L6605.832,62025.666L6614.512,62025.666L6599.507,62006.423L6613.57,61990.543L6605.226,61990.543L6592.24,62005.548L6592.24,61977.019L6584.906,61977.019L6584.906,62025.666Z" style="fill:white;fill-rule:nonzero;"/>
-                      <path d="M6616.127,62008.239C6616.127,62018.87 6623.393,62026.541 6634.361,62026.541C6642.704,62026.541 6647.347,62021.764 6649.029,62018.87L6644.185,62015.237C6642.839,62017.188 6639.811,62020.149 6634.496,62020.149C6628.238,62020.149 6623.73,62016.112 6623.595,62009.854L6650.038,62009.854C6650.106,62009.249 6650.106,62008.643 6650.106,62008.038C6650.106,61997.003 6643.848,61989.669 6633.217,61989.669C6623.595,61989.669 6616.127,61997.339 6616.127,62008.239ZM6623.864,62004.808C6624.335,61999.29 6628.238,61995.792 6633.284,61995.792C6638.331,61995.792 6642.368,61999.021 6642.637,62004.808L6623.864,62004.808Z" style="fill:white;fill-rule:nonzero;"/>
-                      <path d="M6655.96,61990.543L6652.057,61990.543L6652.057,61996.599L6655.96,61996.599L6655.96,62011.806C6655.96,62020.418 6658.516,62026.137 6667.062,62026.137C6669.349,62026.137 6670.628,62025.868 6670.628,62025.868L6670.628,62019.543C6670.628,62019.543 6669.82,62019.611 6669.215,62019.611C6665.312,62019.611 6663.226,62018.399 6663.226,62012.949L6663.226,61996.599L6670.359,61996.599L6670.359,61990.543L6663.226,61990.543L6663.226,61983.209L6655.96,61983.209L6655.96,61990.543Z" style="fill:white;fill-rule:nonzero;"/>
-                      <path d="M6673.588,62015.91C6675.001,62020.082 6679.173,62026.541 6688.795,62026.541C6698.08,62026.541 6703.799,62020.62 6703.799,62012.748C6703.799,61997.945 6682.47,61999.627 6682.47,61990.342C6682.47,61987.112 6684.825,61984.555 6688.997,61984.555C6693.639,61984.555 6695.792,61987.785 6696.869,61990.072L6703.059,61987.314C6701.915,61984.017 6698.08,61977.692 6689.131,61977.692C6680.451,61977.692 6675.001,61983.075 6675.001,61990.409C6675.001,62005.548 6696.196,62003.328 6696.196,62013.286C6696.196,62017.256 6693.37,62019.611 6689.131,62019.611C6683.95,62019.611 6681.191,62016.314 6679.913,62012.949L6673.588,62015.91Z" style="fill:white;fill-rule:nonzero;"/>
-                      <path d="M6710.326,61990.543L6706.423,61990.543L6706.423,61996.599L6710.326,61996.599L6710.326,62011.806C6710.326,62020.418 6712.883,62026.137 6721.428,62026.137C6723.716,62026.137 6724.994,62025.868 6724.994,62025.868L6724.994,62019.543C6724.994,62019.543 6724.187,62019.611 6723.581,62019.611C6719.679,62019.611 6717.593,62018.399 6717.593,62012.949L6717.593,61996.599L6724.725,61996.599L6724.725,61990.543L6717.593,61990.543L6717.593,61983.209L6710.326,61983.209L6710.326,61990.543Z" style="fill:white;fill-rule:nonzero;"/>
-                      <path d="M6747.4,61989.669C6742.421,61989.669 6738.72,61992.562 6737.375,61996.061L6737.375,61990.543L6730.175,61990.543L6730.175,62025.666L6737.509,62025.666L6737.509,62010.527C6737.509,62002.924 6739.73,61997.07 6747.4,61997.07L6747.4,61989.669Z" style="fill:white;fill-rule:nonzero;"/>
-                      <path d="M6748.746,62008.239C6748.746,62018.87 6756.013,62026.541 6766.98,62026.541C6775.324,62026.541 6779.966,62021.764 6781.648,62018.87L6776.804,62015.237C6775.458,62017.188 6772.43,62020.149 6767.115,62020.149C6760.857,62020.149 6756.349,62016.112 6756.215,62009.854L6782.658,62009.854C6782.725,62009.249 6782.725,62008.643 6782.725,62008.038C6782.725,61997.003 6776.467,61989.669 6765.836,61989.669C6756.215,61989.669 6748.746,61997.339 6748.746,62008.239ZM6756.484,62004.808C6756.955,61999.29 6760.857,61995.792 6765.904,61995.792C6770.95,61995.792 6774.987,61999.021 6775.256,62004.808L6756.484,62004.808Z" style="fill:white;fill-rule:nonzero;"/>
-                      <path d="M6785.82,62014.833C6785.82,62021.898 6791.674,62026.541 6799.075,62026.541C6803.449,62026.541 6806.275,62025.061 6808.091,62023.042L6808.697,62025.666L6815.089,62025.666L6815.089,62002.991C6815.089,61995.321 6811.523,61989.669 6801.094,61989.669C6795.24,61989.669 6790.53,61991.889 6787.704,61993.706L6790.53,61998.819C6793.087,61997.406 6796.451,61996.061 6800.354,61996.061C6804.996,61996.061 6807.822,61998.483 6807.822,62002.52L6807.822,62005.817C6806.477,62004.606 6803.449,62003.26 6799.412,62003.26C6791.337,62003.26 6785.82,62008.038 6785.82,62014.833ZM6793.154,62014.631C6793.154,62011.133 6796.115,62008.576 6800.555,62008.576C6804.996,62008.576 6808.024,62010.931 6808.024,62014.631C6808.024,62018.265 6804.929,62020.687 6800.623,62020.687C6796.182,62020.687 6793.154,62018.13 6793.154,62014.631Z" style="fill:white;fill-rule:nonzero;"/>
-                      <path d="M6871.743,62002.722C6871.743,61995.119 6867.706,61989.669 6859.767,61989.669C6854.922,61989.669 6851.019,61991.822 6848.934,61995.522C6847.251,61991.956 6843.753,61989.669 6838.841,61989.669C6834.064,61989.669 6830.632,61992.427 6829.354,61995.119L6829.354,61990.543L6822.154,61990.543L6822.154,62025.666L6829.488,62025.666L6829.488,62004.539C6829.488,61999.492 6832.583,61996.263 6836.553,61996.263C6840.725,61996.263 6843.282,61999.156 6843.282,62003.933L6843.282,62025.666L6850.616,62025.666L6850.616,62004.673C6850.616,61999.29 6853.644,61996.263 6857.748,61996.263C6862.121,61996.263 6864.476,61999.156 6864.476,62004.606L6864.476,62025.666L6871.743,62025.666L6871.743,62002.722Z" style="fill:white;fill-rule:nonzero;"/>
-                  </g>
-              </g>
-              <g transform="matrix(3.67753,0,0,3.67753,26343.236287,65043.071142)">
-                  <g transform="matrix(0.041305,0,0,0.041305,310.875084,540.543843)">
-                      <g transform="matrix(1,0,0,1,-963.5,-684.5)">
-                          <g transform="matrix(1,0,0,1,-20794.875868,-66344.654633)">
-                              <g transform="matrix(3.67753,0,0,3.67753,19772.088865,65043.071142)">
-                                  <path d="M464.266,617.116C447.481,576.83 419.631,541.057 383.866,512.06L383.866,726.071L326.418,726.071C299.742,726.071 278.118,704.447 278.118,677.772L278.118,393.683C278.118,381.766 283.978,370.612 293.791,363.852C303.604,357.091 316.127,355.556 327.249,359.835C346.936,367.409 365.84,376.223 383.866,386.092C438.73,416.13 485.242,456.486 519.94,503.833C525.257,511.088 530.297,518.508 535.047,526.08C568.805,579.895 587.921,641.398 587.921,706.292C587.921,717.216 579.066,726.071 568.142,726.071L501.952,726.071C496.706,726.071 491.675,723.988 487.966,720.278C484.257,716.569 482.173,711.538 482.173,706.292C482.173,674.911 475.858,644.938 464.266,617.116Z" style="fill:url(#msg_Linear1);"/>
-                                  <g transform="matrix(5.555594,0,0,5.555594,-1048.21593,-3546.775734)">
-                                      <path d="M313.981,729.198C302.063,738.095 294.503,750.979 294.503,765.547C294.503,766.74 294.467,767.927 294.396,769.107L275.575,769.107C275.504,767.927 275.468,766.74 275.468,765.547C275.468,753.866 278.909,742.796 284.985,733.109C291.752,722.321 301.788,713.25 313.981,706.964C317.28,705.263 320.736,703.765 324.329,702.494C326.319,701.79 328.526,702.097 330.248,703.315C331.971,704.534 332.995,706.512 332.995,708.622C333.015,713.903 333.015,719.633 333.015,719.633C333.012,719.633 333.009,719.634 333.006,719.635C333.015,733.085 333.015,750.243 333.015,760.413C333.015,765.215 329.123,769.107 324.321,769.107L313.981,769.107L313.981,729.198Z" style="fill:url(#msg_Linear2);"/>
-                                  </g>
-                                  <g transform="matrix(1.510686,0,0,1.510686,-8451.227924,-94007.928712)">
-                                      <path d="M5901.619,62637.134C5907.578,62615.907 5916.674,62595.681 5928.473,62576.873C5931.617,62571.86 5934.953,62566.949 5938.473,62562.146C5941.993,62566.949 5945.329,62571.86 5948.473,62576.873C5926.126,62612.496 5913.473,62653.208 5913.473,62696.164C5913.473,62675.392 5909.293,62655.551 5901.619,62637.134Z" style="fill-opacity:0.1;"/>
-                                  </g>
-                              </g>
-                          </g>
-                      </g>
-                  </g>
-              </g>
-          </g>
-          <defs>
-              <linearGradient id="msg_Linear1" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(256.929103,0,0,256.929103,278.117887,481.461695)"><stop offset="0" style="stop-color:rgb(184,101,26);stop-opacity:1"/><stop offset="0.28" style="stop-color:rgb(238,154,49);stop-opacity:1"/><stop offset="0.55" style="stop-color:rgb(255,217,138);stop-opacity:1"/><stop offset="0.78" style="stop-color:rgb(250,198,107);stop-opacity:1"/><stop offset="1" style="stop-color:rgb(208,124,34);stop-opacity:1"/></linearGradient>
-              <linearGradient id="msg_Linear2" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-41.432652,0,-0,-41.432652,333.015345,724.282231)"><stop offset="0" style="stop-color:rgb(184,101,26);stop-opacity:1"/><stop offset="1" style="stop-color:rgb(250,198,107);stop-opacity:1"/></linearGradient>
-          </defs>
-        </svg>
-      </div>
-      <p class="offer-description">See beyond the candles. Spot liquidity clusters, read order flow, and track whale
-        activity in real time.</p>
-      <dl class="offer-total">
-        <dt>Combined total</dt>
-        <dd>$5,998</dd>
-        <dt>Already paid</dt>
-        <dd class="offer-paid">−$2,999</dd>
-        <dt>Due now</dt>
-        <dd><span class="due-now"><span class="save-tag">You save $2,999</span><span class="due-price">$2,999</span></span></dd>
-      </dl>
-      <button class="offer-action offer-cta" type="button" disabled>Get Lifetime Access</button>
-    </section>
-
-    <footer class="offer-footer">
-      <p class="offer-terms">Lifetime access covers the software only. MarketStream live market data requires its own subscription.</p>
-      <div class="offer-skip-group">
-        <p class="offer-skip-note" id="offer-skip-note">Once you skip, this offer is gone forever.</p>
-        <button class="offer-action offer-skip" type="button" aria-describedby="offer-skip-note" disabled>Skip this offer</button>
-      </div>
-    </footer>
+    <div class="offer-actions" role="group" aria-label="Lifetime offer options">
+      <button class="offer-action offer-cta" type="button" disabled>Yes, get lifetime access ($2,999)</button>
+      <button class="offer-action" type="button" disabled>Use a different card</button>
+      <button class="offer-action" type="button" disabled>
+        Pay over time
+        <img class="offer-payment-logo" src="clarity-pay-logo.svg" width="201" height="38" alt="Clarity Pay">
+      </button>
+      <button class="offer-action offer-skip" type="button" disabled>No thanks</button>
+    </div>
   </main>
+  <footer class="upsell-disclaimer">
+    &quot;For life&quot; means for as long as we offer this product. See Terms, section 8.6.
+  </footer>
   <script>
     (() => {
       const canvas = document.querySelector('.upsell-aurora canvas');
@@ -834,22 +601,6 @@
       });
       document.addEventListener('visibilitychange', updateMotion);
       updateMotion();
-    })();
-
-    (() => {
-      const offer = document.querySelector('.offer');
-      if (!offer || !('IntersectionObserver' in window)) return;
-
-      let inView = false;
-      function updateBorderMotion() {
-        offer.classList.toggle('is-border-active', inView && !document.hidden);
-      }
-
-      new IntersectionObserver(([entry]) => {
-        inView = entry.isIntersecting;
-        updateBorderMotion();
-      }).observe(offer);
-      document.addEventListener('visibilitychange', updateBorderMotion);
     })();
   </script>
 </body>
